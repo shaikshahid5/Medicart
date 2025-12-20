@@ -1,0 +1,135 @@
+{
+  "medicines": [
+    {
+      "id": 1,
+      "sku": "PCM-650",
+      "name": "Paracetamol 650mg",
+      "category": "Tablet",
+      "price": 30,
+      "requires_rx": false,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "sku": "PCM-500",
+      "name": "Paracetamol 500mg",
+      "category": "Tablet",
+      "price": 20,
+      "requires_rx": false,
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "sku": "AMOX-500",
+      "name": "Amoxicillin 500mg",
+      "category": "Capsule",
+      "price": 120,
+      "requires_rx": true,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "sku": "AZI-500",
+      "name": "Azithromycin 500mg",
+      "category": "Tablet",
+      "price": 150,
+      "requires_rx": true,
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "sku": "CET-10",
+      "name": "Cetirizine 10mg",
+      "category": "Tablet",
+      "price": 25,
+      "requires_rx": false,
+      "inStock": true
+    },
+    {
+      "id": 6,
+      "sku": "LEV-5",
+      "name": "Levocetirizine 5mg",
+      "category": "Tablet",
+      "price": 28,
+      "requires_rx": false,
+      "inStock": false
+    },
+    {
+      "id": 7,
+      "sku": "VITC-500",
+      "name": "Vitamin C 500mg",
+      "category": "Tablet",
+      "price": 60,
+      "requires_rx": false,
+      "inStock": true
+    },
+    {
+      "id": 8,
+      "sku": "ORS-POW",
+      "name": "ORS Powder",
+      "category": "Powder",
+      "price": 20,
+      "requires_rx": false,
+      "inStock": true
+    },
+    {
+      "id": 9,
+      "sku": "INS-GLAR",
+      "name": "Insulin Glargine",
+      "category": "Injection",
+      "price": 450,
+      "requires_rx": true,
+      "inStock": true
+    },
+    {
+      "id": 10,
+      "sku": "PCM-SYP",
+      "name": "Paracetamol Syrup",
+      "category": "Syrup",
+      "price": 55,
+      "requires_rx": false,
+      "inStock": true
+    },
+    {
+      "id": "6ed3",
+      "sku": "App",
+      "name": "hi",
+      "category": "Syrup",
+      "price": "232",
+      "requires_rx": true,
+      "inStock": true
+    },
+    {
+      "id": 1,
+      "sku": "PCM-650",
+      "name": "Paracetamol 650mg",
+      "category": "Capsule",
+      "price": 30,
+      "requires_rx": false,
+      "inStock": true
+    }
+  ],
+  "batches": [
+    {
+      "id": 1,
+      "medicineId": 1,
+      "batchNo": "BATCH-PCM-001",
+      "expiryDate": "2026-02-01",
+      "qtyAvailable": 120
+    },
+    {
+      "id": 2,
+      "medicineId": 1,
+      "batchNo": "BATCH-PCM-002",
+      "expiryDate": "2025-11-01",
+      "qtyAvailable": 80
+    },
+    {
+      "id": 3,
+      "medicineId": 3,
+      "batchNo": "BATCH-AMOX-001",
+      "expiryDate": "2025-08-15",
+      "qtyAvailable": 40
+    }
+  ]
+}

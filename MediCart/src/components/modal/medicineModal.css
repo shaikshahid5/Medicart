@@ -1,0 +1,110 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: grid;
+  place-items: center;
+  z-index: 3000;
+}
+
+.modal-box {
+  width: 520px;
+  max-width: 90%;
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  position: relative;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+  animation: scaleIn 0.25s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.category {
+  color: #1f8a46;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.details {
+  max-height: 220px;
+  overflow-y: auto;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.add-cart-btn {
+  width: 100%;
+  background: #2fbf5d;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.add-cart-btn:hover {
+  background: #1f8a46;
+}
+.modal-qty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.qty-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #2fbf5d;
+  background: #f0fdf4; /* light green */
+  color: #2fbf5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background: #2fbf5d;
+  color: white;
+}
+
+.qty-count {
+  font-weight: 700;
+  font-size: 16px;
+  color: #374151;
+  min-width: 24px;
+  text-align: center;
+}

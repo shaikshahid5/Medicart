@@ -1,0 +1,164 @@
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.icon-wrap {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  background: var(--green-100);
+  color: var(--green-700);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+/* BUTTON */
+.btn {
+  width: 100%;
+  background: var(--green-500);
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--green-700);
+}
+
+.btn.disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+}
+
+/* ADD TO CART — minimal */
+.btn-cart {
+  width: 100%;
+  background: #2fbf5d;
+  border: none;
+  padding: 8px 10px;        /* ⬅ smaller */
+  border-radius: 10px;
+  color: white;
+  font-size: 13px;         /* ⬅ smaller text */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;                /* ⬅ tight spacing */
+  cursor: pointer;
+}
+
+.btn-cart:hover {
+  background: #26a654;     /* ⬅ softer green */
+}
+
+.btn-cart:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+}
+
+/* VIEW MORE — subtle outline */
+.btn-outline {
+  margin-top: 8px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #9ca3af;   /* ⬅ neutral gray */
+  color: #374151;              /* ⬅ not green */
+  padding: 7px 10px;           /* ⬅ smaller */
+  border-radius: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  border-color: #2fbf5d;   /* ⬅ green only on hover */
+  color: #2fbf5d;
+  background: #f0fdf4;     /* ⬅ very light green */
+}
+.out-of-stock {
+  margin-top: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  border: 1px dashed #d1d5db;
+}
+
+/* Quantity controls (same style as modal) */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.qty-controls button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #2fbf5d;
+  background: #f0fdf4;        /* light green */
+  color: #2fbf5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.qty-controls button:hover {
+  background: #2fbf5d;
+  color: white;
+}
+
+.qty-controls span {
+  min-width: 22px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #374151;            /* neutral grey */
+}
+
