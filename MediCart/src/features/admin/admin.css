@@ -11,7 +11,6 @@
   --gray-500: #6b7280;
   --gray-300: #d1d5db;
   --gray-100: #f3f4f6;
-
   --danger-500: #dc2626;
   --danger-100: #fee2e2;
 }
@@ -149,7 +148,7 @@
 
 /* ===========================
    BUTTONS
-=========================== */
+=========================== */ 
 .btn-primary {
   background: var(--green-500);
   color: white;
@@ -281,4 +280,38 @@
   height: 16px;
   accent-color: var(--green-500);
   cursor: pointer;
+}
+
+/* ===========================
+   ADMIN LOGIN PAGE
+=========================== */
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-50);
+}
+
+.admin-login-box {
+  width: 380px;
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.admin-login-box input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-300);
+  font-size: 14px;
+}
+
+.admin-login-box input:focus {
+  outline: none;
+  border-color: var(--green-500);
 }
