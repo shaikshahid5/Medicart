@@ -11,7 +11,7 @@ export default function ProductsTable({
           <th>Name</th>
           <th>Category</th>
           <th>Price</th>
-          <th>Rx</th>
+          <th>Prescription <br /> required</th>
           <th>Status</th>
           <th>Actions</th>
         </tr>
@@ -35,7 +35,7 @@ export default function ProductsTable({
               {p.inStock ? (
                 <span className="badge ok">In Stock</span>
               ) : (
-                <span className="badge warn">Out</span>
+                <span className="badge warn">Out Of Stock</span>
               )}
             </td>
             <td className="actions">

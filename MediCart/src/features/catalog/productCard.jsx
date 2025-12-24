@@ -10,55 +10,60 @@ export default function ProductCard({ product, onViewMore }) {
     state.cart.items.find((i) => i.product.id === product.id)
   );
 
-  const categoryKey = product.category?.trim().toLowerCase();
+  const categoryKey = product.category?.trim();
   const Icon = MEDICINE_ICONS[categoryKey] || MEDICINE_ICONS.Tablet;
 
   return (
     <div className="card">
-      <div className="icon-wrap">
-        <Icon size={38} />
+      {/* Icon */}
+      <div className="card-header">
+        <div className="icon-wrap">
+          <Icon size={42} />
+        </div>
       </div>
 
-      <h3>{product.name}</h3>
-      <p className="price">₹ {product.price}</p>
+      {/* Body */}
+      <div className="card-body">
+        <h3 className="product-name">{product.name}</h3>
+        <p className="price">₹ {product.price}</p>
+      </div>
 
-      {product.requires_rx && (
-        <span className="badge">Prescription Required</span>
-      )}
+      {/* Footer / Actions */}
+      <div className="card-footer">
+        {product.inStock ? (
+          cartItem ? (
+            <div className="qty-controls">
+              <button onClick={() => dispatch(decrementQty(product.id))}>
+                <FaMinus />
+              </button>
+              <span>{cartItem.qty}</span>
+              <button onClick={() => dispatch(incrementQty(product.id))}>
+                <FaPlus />
+              </button>
+            </div>
+          ) : (
+            <div className="card-actions">
+              <button
+                className="btn-cart"
+                onClick={() => dispatch(addToCart(product))}
+              >
+                <FaCartPlus size={14} />
+                <span>Buy Now</span>
+              </button>
 
-      {product.inStock ? (
-        cartItem ? (
-          <div className="qty-controls">
-            <button onClick={() => dispatch(decrementQty(product.id))}>
-              <FaMinus />
-            </button>
-            <span>{cartItem.qty}</span>
-            <button onClick={() => dispatch(incrementQty(product.id))}>
-              <FaPlus />
-            </button>
-          </div>
+              <button
+                className="btn-outline"
+                onClick={() => onViewMore(product)}
+              >
+                <FaInfoCircle size={14} />
+                <span>View More</span>
+              </button>
+            </div>
+          )
         ) : (
-          <>
-            <button
-              className="btn-cart"
-              onClick={() => dispatch(addToCart(product))}
-            >
-              <FaCartPlus size={14} />
-              <span>Add to Cart</span>
-            </button>
-
-            <button
-              className="btn-outline"
-              onClick={() => onViewMore(product)}
-            >
-              <FaInfoCircle size={14} />
-              <span>View More</span>
-            </button>
-          </>
-        )
-      ) : (
-        <div className="out-of-stock">Out of Stock</div>
-      )}
+          <div className="out-of-stock">Out of Stock</div>
+        )}
+      </div>
     </div>
   );
 }

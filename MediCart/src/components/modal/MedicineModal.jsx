@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaCartPlus, FaTimes, FaPlus, FaMinus } from "react-icons/fa";
+import { FaCartPlus, FaTimes, FaPlus, FaMinus, FaPrescriptionBottleAlt } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addToCart,
@@ -51,6 +51,14 @@ export default function MedicineModal({ product, onClose }) {
         <button className="close-btn" onClick={onClose}>
           <FaTimes />
         </button>
+
+        {/* Prescription badge */}
+        {product.requires_rx && (
+          <div className="prescription-banner">
+            <FaPrescriptionBottleAlt />
+            <span>Prescription Required</span>
+          </div>
+        )}
 
         <h2>{product.name}</h2>
         <p className="category">{product.category}</p>

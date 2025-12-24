@@ -1,39 +1,12 @@
 {
   "medicines": [
     {
-      "id": "1",
-      "sku": "PCM-650",
-      "name": "Paracetamol 650mg",
-      "category": "Powder",
-      "price": 30,
-      "requires_rx": true,
-      "inStock": true
-    },
-    {
-      "id": "3",
-      "sku": "AMOX-500",
-      "name": "Amoxicillin 500mg",
-      "category": "Capsule",
-      "price": 120,
-      "requires_rx": true,
-      "inStock": true
-    },
-    {
-      "id": "4",
-      "sku": "AZI-500",
-      "name": "Azithromycin 500mg",
-      "category": "Tablet",
-      "price": 150,
-      "requires_rx": true,
-      "inStock": true
-    },
-    {
       "id": "5",
       "sku": "CET-10",
-      "name": "Cetirizine 10mg",
+      "name": "Cetirizine 1000mg",
       "category": "Tablet",
       "price": 25,
-      "requires_rx": false,
+      "requires_rx": true,
       "inStock": true
     },
     {
@@ -41,9 +14,9 @@
       "sku": "LEV-5",
       "name": "Levocetirizine 5mg",
       "category": "Tablet",
-      "price": 28,
+      "price": "300",
       "requires_rx": false,
-      "inStock": false
+      "inStock": true
     },
     {
       "id": "7",
@@ -82,15 +55,6 @@
       "inStock": true
     },
     {
-      "id": "6ed3",
-      "sku": "App",
-      "name": "hi",
-      "category": "Syrup",
-      "price": "232",
-      "requires_rx": true,
-      "inStock": true
-    },
-    {
       "id": "1",
       "sku": "PCM-650",
       "name": "Paracetamol 650mg",
@@ -98,22 +62,31 @@
       "price": 30,
       "requires_rx": false,
       "inStock": true
+    },
+    {
+      "id": "865e",
+      "sku": "DOLO",
+      "name": "Dolo 650",
+      "category": "Tablet",
+      "price": "10",
+      "requires_rx": true,
+      "inStock": true
     }
   ],
   "batches": [
-    {
-      "id": "1",
-      "medicineId": 1,
-      "batchNo": "BATCH-PCM-001",
-      "expiryDate": "2026-02-01",
-      "qtyAvailable": "132"
-    },
     {
       "id": "2",
       "medicineId": 1,
       "batchNo": "BATCH-PCM-002",
       "expiryDate": "2025-11-01",
       "qtyAvailable": 80
+    },
+    {
+      "id": "ae30",
+      "medicineId": 10,
+      "batchNo": "PCM",
+      "expiryDate": "2026-02-17",
+      "qtyAvailable": "40"
     }
   ]
 }
