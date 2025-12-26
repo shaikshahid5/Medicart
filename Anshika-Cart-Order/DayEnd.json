@@ -1,0 +1,580 @@
+{
+  "code": "200",
+  "success": "1",
+  "message": "",
+  "order_json": [
+    {
+      "Restaurant": {
+        "restaurantid": "154228",
+        "res_name": "Integration-SakhraniRohan-Demo",
+        "address": "Test Ahmedabad Gujarat 380015",
+        "restaurant_state": "Gujarat",
+        "contact_information": "7228956676",
+        "restID": "cp81ghin"
+      },
+      "Customer": {
+        "name": "Shubham",
+        "address": "",
+        "phone": "",
+        "gst_no": "",
+        "created_date": ""
+      },
+      "Order": {
+        "orderID": "240",
+        "refId": "6707714996",
+        "delivery_charges": "0",
+        "container_charges": "0",
+        "order_type": "Dine In",
+        "sub_order_type_id": "766462",
+        "sub_order_type": "Dine In",
+        "payment_type": "Cash",
+        "custom_payment_type": "",
+        "table_no": "2",
+        "no_of_persons": "1",
+        "discount_total": "0",
+        "tax_total": "0",
+        "round_off": "0.50",
+        "core_total": "161.5",
+        "total": "162",
+        "created_on": "2025-09-17 15:33:13",
+        "order_from": "POS",
+        "advance_order": "No",
+        "part_payment": [
+          
+        ],
+        "order_date": "2025-09-17",
+        "status": "Success",
+        "service_charge": 0,
+        "waivedOff": "0",
+        "tip": "0"
+      },
+      "Tax": [
+        
+      ],
+      "Discount": [
+        
+      ],
+      "OrderItem": [
+        {
+          "categoryid": "4829827",
+          "categoryname": "Beverages",
+          "name": "Water",
+          "itemid": "136978134",
+          "itemcode": "bis",
+          "specialnotes": "",
+          "price": "9.5",
+          "quantity": "4",
+          "total": "38",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829827",
+          "categoryname": "Beverages",
+          "name": "Water",
+          "itemid": "136978134",
+          "itemcode": "bis",
+          "specialnotes": "",
+          "price": "9.5",
+          "quantity": "1",
+          "total": "9.5",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829827",
+          "categoryname": "Beverages",
+          "name": "Coke",
+          "itemid": "136978129",
+          "itemcode": "CO",
+          "specialnotes": "",
+          "price": "38",
+          "quantity": "3",
+          "total": "114",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        }
+      ]
+    },
+    {
+      "Restaurant": {
+        "restaurantid": "154228",
+        "res_name": "Integration-SakhraniRohan-Demo",
+        "address": "Test Ahmedabad Gujarat 380015",
+        "restaurant_state": "Gujarat",
+        "contact_information": "7228956676",
+        "restID": "cp81ghin"
+      },
+      "Customer": {
+        "name": "Shubham",
+        "address": "",
+        "phone": "",
+        "gst_no": "",
+        "created_date": ""
+      },
+      "Order": {
+        "orderID": "239",
+        "refId": "6706597104",
+        "delivery_charges": "0",
+        "container_charges": "0",
+        "order_type": "Dine In",
+        "sub_order_type_id": "766462",
+        "sub_order_type": "Dine In",
+        "payment_type": "Cash",
+        "custom_payment_type": "",
+        "table_no": "2",
+        "no_of_persons": "1",
+        "discount_total": "0",
+        "tax_total": "0",
+        "round_off": "0.50",
+        "core_total": "85.5",
+        "total": "86",
+        "created_on": "2025-09-17 13:02:36",
+        "order_from": "POS",
+        "advance_order": "No",
+        "part_payment": [
+          
+        ],
+        "order_date": "2025-09-17",
+        "status": "Success",
+        "service_charge": 0,
+        "waivedOff": "0",
+        "tip": "0"
+      },
+      "Tax": [
+        
+      ],
+      "Discount": [
+        
+      ],
+      "OrderItem": [
+        {
+          "categoryid": "4829827",
+          "categoryname": "Beverages",
+          "name": "Coke",
+          "itemid": "136978129",
+          "itemcode": "CO",
+          "specialnotes": "",
+          "price": "38",
+          "quantity": "1",
+          "total": "38",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829827",
+          "categoryname": "Beverages",
+          "name": "Water",
+          "itemid": "136978134",
+          "itemcode": "bis",
+          "specialnotes": "",
+          "price": "9.5",
+          "quantity": "2",
+          "total": "19",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829827",
+          "categoryname": "Beverages",
+          "name": "7\"up",
+          "itemid": "136978133",
+          "itemcode": "upp",
+          "specialnotes": "",
+          "price": "28.5",
+          "quantity": "1",
+          "total": "28.5",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        }
+      ]
+    },
+    {
+      "Restaurant": {
+        "restaurantid": "154228",
+        "res_name": "Integration-SakhraniRohan-Demo",
+        "address": "Test Ahmedabad Gujarat 380015",
+        "restaurant_state": "Gujarat",
+        "contact_information": "7228956676",
+        "restID": "cp81ghin"
+      },
+      "Customer": {
+        "name": "Gajanan",
+        "address": "",
+        "phone": "",
+        "gst_no": "",
+        "created_date": ""
+      },
+      "Order": {
+        "orderID": "238",
+        "refId": "6706029844",
+        "delivery_charges": "0",
+        "container_charges": "0",
+        "order_type": "Dine In",
+        "sub_order_type_id": "766462",
+        "sub_order_type": "Dine In",
+        "payment_type": "Cash",
+        "custom_payment_type": "",
+        "table_no": "2",
+        "no_of_persons": "1",
+        "discount_total": "0",
+        "tax_total": "0",
+        "round_off": "0",
+        "core_total": "1173",
+        "total": "1173",
+        "created_on": "2025-09-17 11:26:27",
+        "order_from": "POS",
+        "advance_order": "No",
+        "part_payment": [
+          
+        ],
+        "order_date": "2025-09-17",
+        "status": "Success",
+        "service_charge": 0,
+        "waivedOff": "0",
+        "tip": "0"
+      },
+      "Tax": [
+        
+      ],
+      "Discount": [
+        
+      ],
+      "OrderItem": [
+        {
+          "categoryid": "4829825",
+          "categoryname": "Seafood Meal",
+          "name": "Fish Fillet Burger Combo",
+          "itemid": "136978147",
+          "itemcode": "fish fillet burger c",
+          "specialnotes": "",
+          "price": "269",
+          "quantity": "1",
+          "total": "269",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829825",
+          "categoryname": "Seafood Meal",
+          "name": "Spicy Value Shrimp Meal (10 Pieces)",
+          "itemid": "136978214",
+          "itemcode": "spicy value shrimp m",
+          "specialnotes": "",
+          "price": "459",
+          "quantity": "1",
+          "total": "459",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829826",
+          "categoryname": "Side Orders",
+          "name": "Nugget Sauce",
+          "itemid": "136978120",
+          "itemcode": "27",
+          "specialnotes": "",
+          "price": "19",
+          "quantity": "1",
+          "total": "19",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829830",
+          "categoryname": "Desserts",
+          "name": "Icecream With Strawberry Syrup",
+          "itemid": "136978153",
+          "itemcode": "icecream with strawb",
+          "specialnotes": "",
+          "price": "29",
+          "quantity": "1",
+          "total": "29",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829830",
+          "categoryname": "Desserts",
+          "name": "Icecream With Chocolate Syrup",
+          "itemid": "136978154",
+          "itemcode": "icecream with chocol",
+          "specialnotes": "",
+          "price": "29",
+          "quantity": "1",
+          "total": "29",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829828",
+          "categoryname": "Hot Coffees",
+          "name": "Macchiato (Large)",
+          "itemid": "136978220",
+          "itemcode": "macchiato",
+          "specialnotes": "",
+          "price": "159",
+          "quantity": "1",
+          "total": "159",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829825",
+          "categoryname": "Seafood Meal",
+          "name": "Fish Fillet Sandwich",
+          "itemid": "136978107",
+          "itemcode": "14",
+          "specialnotes": "",
+          "price": "209",
+          "quantity": "1",
+          "total": "209",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        }
+      ]
+    },
+    {
+      "Restaurant": {
+        "restaurantid": "154228",
+        "res_name": "Integration-SakhraniRohan-Demo",
+        "address": "Test Ahmedabad Gujarat 380015",
+        "restaurant_state": "Gujarat",
+        "contact_information": "7228956676",
+        "restID": "cp81ghin"
+      },
+      "Customer": {
+        "name": "Gajanan",
+        "address": "",
+        "phone": "",
+        "gst_no": "",
+        "created_date": ""
+      },
+      "Order": {
+        "orderID": "237",
+        "refId": "6706029839",
+        "delivery_charges": "0",
+        "container_charges": "0",
+        "order_type": "Dine In",
+        "sub_order_type_id": "766462",
+        "sub_order_type": "Dine In",
+        "payment_type": "Cash",
+        "custom_payment_type": "",
+        "table_no": "2",
+        "no_of_persons": "1",
+        "discount_total": "0",
+        "tax_total": "0",
+        "round_off": "0.50",
+        "core_total": "545.5",
+        "total": "546",
+        "created_on": "2025-09-17 11:19:55",
+        "order_from": "POS",
+        "advance_order": "No",
+        "part_payment": [
+          
+        ],
+        "order_date": "2025-09-17",
+        "status": "Success",
+        "service_charge": 0,
+        "waivedOff": "0",
+        "tip": "0"
+      },
+      "Tax": [
+        
+      ],
+      "Discount": [
+        
+      ],
+      "OrderItem": [
+        {
+          "categoryid": "4829825",
+          "categoryname": "Seafood Meal",
+          "name": "Value Shrimp Meal (10 Pieces)",
+          "itemid": "136978199",
+          "itemcode": "16",
+          "specialnotes": "",
+          "price": "459",
+          "quantity": "1",
+          "total": "459",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829827",
+          "categoryname": "Beverages",
+          "name": "7\"up",
+          "itemid": "136978133",
+          "itemcode": "upp",
+          "specialnotes": "",
+          "price": "28.5",
+          "quantity": "1",
+          "total": "28.5",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829830",
+          "categoryname": "Desserts",
+          "name": "Icecream With Strawberry Syrup",
+          "itemid": "136978153",
+          "itemcode": "icecream with strawb",
+          "specialnotes": "",
+          "price": "29",
+          "quantity": "1",
+          "total": "29",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        },
+        {
+          "categoryid": "4829830",
+          "categoryname": "Desserts",
+          "name": "Icecream With Chocolate Syrup",
+          "itemid": "136978154",
+          "itemcode": "icecream with chocol",
+          "specialnotes": "",
+          "price": "29",
+          "quantity": "1",
+          "total": "29",
+          "addon": [
+            
+          ],
+          "item_tax_info": {
+            "total_tax_i": 0
+          },
+          "total_discount": 0,
+          "total_tax": 0,
+          "tax_ids": "0",
+          "itemsapcode": ""
+        }
+      ]
+    }
+  ]
+}
