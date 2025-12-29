@@ -13,7 +13,7 @@ export default function App() {
     <Routes>
       {/* CUSTOMER */}
       <Route path="/" element={<HomePage />} />
-      <Route path="/address" element={<AddressPage />} /> {/* 👈 new route */}
+      <Route path="/address" element={<AddressPage />} /> 
 
      <Route path="/orders" element={<MyOrdersPage />} />
         <Route path="/orders/:orderId" element={<OrderDetailsPage />} />
