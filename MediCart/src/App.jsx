@@ -59,7 +59,6 @@ const App = () => {
         <Route index element={<Navigate to="products" />} />
         <Route path="products" element={<AdminProductsPage />} />
         <Route path="batches" element={<AdminBatchPage />} />
-
       </Route>
 
       <Route path="*" element={<h1 className="text-center mt-5">404 Not Found</h1>} />

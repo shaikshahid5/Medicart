@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './styles/vars.css'; // Must be first
 import './index.css'
 import App from './App.jsx'

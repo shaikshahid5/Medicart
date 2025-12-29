@@ -1,0 +1,107 @@
+
+{
+  "metrics": {
+    "newOrders": { "value": 34567, "trend": 2.0 },
+    "totalIncome": { "value": 74567, "trend": 5.45 },
+    "totalExpense": { "value": 24567, "trend": -2.0 },
+    "newUsers": { "value": 34567, "trend": -25.0 },
+    "yearlyRevenue": 245479
+  },
+  "yearly": {
+    "lineCharts": {
+      "yearlyStats": [
+        { "month": "Jan", "avgOrderValue": 720 },
+        { "month": "Feb", "avgOrderValue": 850 },
+        { "month": "Mar", "avgOrderValue": 980 },
+        { "month": "Apr", "avgOrderValue": 760 },
+        { "month": "May", "avgOrderValue": 890 },
+        { "month": "Jun", "avgOrderValue": 820 },
+        { "month": "Jul", "avgOrderValue": 940 },
+        { "month": "Aug", "avgOrderValue": 870 },
+        { "month": "Sep", "avgOrderValue": 910 },
+        { "month": "Oct", "avgOrderValue": 860 },
+        { "month": "Nov", "avgOrderValue": 1000 },
+        { "month": "Dec", "avgOrderValue": 1180 }
+      ]
+    },
+    "barCharts": {
+      "salesRevenue": [
+        { "period": "Jan", "totalSales": 600, "totalRevenue": 500 },
+        { "period": "Feb", "totalSales": 700, "totalRevenue": 650 },
+        { "period": "Mar", "totalSales": 900, "totalRevenue": 780 },
+        { "period": "Apr", "totalSales": 650, "totalRevenue": 620 },
+        { "period": "May", "totalSales": 800, "totalRevenue": 740 },
+        { "period": "Jun", "totalSales": 750, "totalRevenue": 700 },
+        { "period": "Jul", "totalSales": 880, "totalRevenue": 820 },
+        { "period": "Aug", "totalSales": 820, "totalRevenue": 780 },
+        { "period": "Sep", "totalSales": 870, "totalRevenue": 810 },
+        { "period": "Oct", "totalSales": 790, "totalRevenue": 740 },
+        { "period": "Nov", "totalSales": 1100, "totalRevenue": 1020 },
+        { "period": "Dec", "totalSales": 950, "totalRevenue": 880 }
+      ]
+    }
+  },
+  "monthly": {
+    "lineCharts": {
+      "engagement": [
+        { "week": "Week 1", "activeUsers": 180 },
+        { "week": "Week 2", "activeUsers": 210 },
+        { "week": "Week 3", "activeUsers": 190 },
+        { "week": "Week 4", "activeUsers": 230 }
+      ]
+    },
+    "barCharts": {
+      "ordersByHour": [
+        { "hour": "09", "orders": 12 },
+        { "hour": "10", "orders": 18 },
+        { "hour": "11", "orders": 15 },
+        { "hour": "12", "orders": 20 }
+      ]
+    }
+  },
+  "weekly": {
+    "lineCharts": {
+      "yearlyStats": [
+        { "day": "Mon", "value": 30 },
+        { "day": "Tue", "value": 45 },
+        { "day": "Wed", "value": 40 },
+        { "day": "Thu", "value": 50 },
+        { "day": "Fri", "value": 60 },
+        { "day": "Sat", "value": 55 },
+        { "day": "Sun", "value": 35 }
+      ]
+    },
+    "barCharts": {
+      "salesRevenue": [
+        { "day": "Mon", "sales": 26, "revenue": 20 },
+        { "day": "Tue", "sales": 40, "revenue": 35 },
+        { "day": "Wed", "sales": 36, "revenue": 32 },
+        { "day": "Thu", "sales": 48, "revenue": 42 },
+        { "day": "Fri", "sales": 62, "revenue": 56 },
+        { "day": "Sat", "sales": 58, "revenue": 51 },
+        { "day": "Sun", "sales": 33, "revenue": 27 }
+      ]
+    }
+  },
+  "lastWeek": {
+    "lineCharts": {
+      "salesPerformance": [
+        { "day": "Mon", "revenue": 120 },
+        { "day": "Tue", "revenue": 180 },
+        { "day": "Wed", "revenue": 160 },
+        { "day": "Thu", "revenue": 200 },
+        { "day": "Fri", "revenue": 220 },
+        { "day": "Sat", "revenue": 190 },
+        { "day": "Sun", "revenue": 130 }
+      ]
+    },
+    "pieCharts": {
+      "salesByCategory": [
+        { "category": "OTC", "value": 400 },
+        { "category": "Prescription", "value": 300 },
+        { "category": "Wellness", "value": 200 },
+        { "category": "Devices", "value": 150 }
+      ]
+    }
+  }
+}

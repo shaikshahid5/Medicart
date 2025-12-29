@@ -1,0 +1,59 @@
+{
+  "ReportID": "RPT-2025-001",
+  "GeneratedDate": "2025-12-23T22:30:00Z",
+  "Metrics": {
+    "SalesVolume": [
+      { "month": "July", "date": "2025-07-05", "product": "Paracetamol", "units": 120, "revenue": 2400 },
+      { "month": "July", "date": "2025-07-12", "product": "Ibuprofen", "units": 80, "revenue": 1600 },
+      { "month": "July", "date": "2025-07-20", "product": "Vitamin C", "units": 200, "revenue": 3000 },
+      { "month": "July", "date": "2025-07-28", "product": "Amoxicillin", "units": 150, "revenue": 4500 },
+
+      { "month": "August", "date": "2025-08-03", "product": "Paracetamol", "units": 150, "revenue": 3000 },
+      { "month": "August", "date": "2025-08-10", "product": "Ibuprofen", "units": 95, "revenue": 1900 },
+      { "month": "August", "date": "2025-08-18", "product": "Vitamin C", "units": 220, "revenue": 3300 },
+      { "month": "August", "date": "2025-08-25", "product": "Amoxicillin", "units": 160, "revenue": 4800 },
+
+      { "month": "September", "date": "2025-09-05", "product": "Paracetamol", "units": 130, "revenue": 2600 },
+      { "month": "September", "date": "2025-09-12", "product": "Ibuprofen", "units": 100, "revenue": 2000 },
+      { "month": "September", "date": "2025-09-20", "product": "Vitamin C", "units": 210, "revenue": 3150 },
+      { "month": "September", "date": "2025-09-28", "product": "Amoxicillin", "units": 170, "revenue": 5100 },
+
+      { "month": "October", "date": "2025-10-06", "product": "Paracetamol", "units": 140, "revenue": 2800 },
+      { "month": "October", "date": "2025-10-13", "product": "Ibuprofen", "units": 110, "revenue": 2200 },
+      { "month": "October", "date": "2025-10-21", "product": "Vitamin C", "units": 230, "revenue": 3450 },
+      { "month": "October", "date": "2025-10-29", "product": "Amoxicillin", "units": 180, "revenue": 5400 },
+
+      { "month": "November", "date": "2025-11-04", "product": "Paracetamol", "units": 160, "revenue": 3200 },
+      { "month": "November", "date": "2025-11-11", "product": "Ibuprofen", "units": 120, "revenue": 2400 },
+      { "month": "November", "date": "2025-11-19", "product": "Vitamin C", "units": 240, "revenue": 3600 },
+      { "month": "November", "date": "2025-11-27", "product": "Amoxicillin", "units": 190, "revenue": 5700 },
+
+      { "month": "December", "date": "2025-12-05", "product": "Paracetamol", "units": 170, "revenue": 3400 },
+      { "month": "December", "date": "2025-12-12", "product": "Ibuprofen", "units": 130, "revenue": 2600 },
+      { "month": "December", "date": "2025-12-20", "product": "Vitamin C", "units": 250, "revenue": 3750 },
+      { "month": "December", "date": "2025-12-28", "product": "Amoxicillin", "units": 200, "revenue": 6000 }
+    ],
+    "StockStatus": [
+      { "month": "July", "date": "2025-07-10", "item": "Amoxicillin", "stock": 200, "turnover": "5x" },
+      { "month": "July", "date": "2025-07-15", "item": "Vitamin C", "stock": 500, "turnover": "8x" },
+      { "month": "July", "date": "2025-07-20", "item": "Ibuprofen", "stock": 300, "turnover": "6x" },
+      { "month": "July", "date": "2025-07-25", "item": "Paracetamol", "stock": 400, "turnover": "7x" },
+
+      { "month": "August", "date": "2025-08-05", "item": "Amoxicillin", "stock": 180, "turnover": "6x" },
+      { "month": "August", "date": "2025-08-12", "item": "Vitamin C", "stock": 520, "turnover": "9x" },
+      { "month": "August", "date": "2025-08-18", "item": "Ibuprofen", "stock": 310, "turnover": "6x" },
+      { "month": "August", "date": "2025-08-25", "item": "Paracetamol", "stock": 420, "turnover": "7x" }
+    ]
+  },
+  "Prescriptions": [
+    { "month": "July", "date": "2025-07-08", "drug": "Antibiotics", "count": 300 },
+    { "month": "July", "date": "2025-07-15", "drug": "Painkillers", "count": 450 },
+    { "month": "July", "date": "2025-07-22", "drug": "Antihypertensives", "count": 200 },
+    { "month": "July", "date": "2025-07-29", "drug": "Supplements", "count": 350 },
+
+    { "month": "August", "date": "2025-08-07", "drug": "Antibiotics", "count": 320 },
+    { "month": "August", "date": "2025-08-14", "drug": "Painkillers", "count": 470 },
+    { "month": "August", "date": "2025-08-21", "drug": "Antihypertensives", "count": 210 },
+    { "month": "August", "date": "2025-08-28", "drug": "Supplements", "count": 360 }
+  ]
+}
