@@ -6,12 +6,19 @@ import AdminProductsPage from "./features/admin/AdminProductsPage";
 import AdminBatchPage from "./features/admin/AdminBatchPage";
 import AdminLoginPage from "./features/admin/AdminLoginPage";
 import MediCartModule4 from "./features/payment/MediCartModule4";
+import AddressPage from "./features/delivery/AddressPage";
+import MyOrdersPage from "./order/MyOrdersPage";
+import OrderDetailsPage from "./order/OrderDetailsPage";
 
 export default function App() {
   return (
     <Routes>
       {/* CUSTOMER */}
       <Route path="/" element={<HomePage />} />
+      <Route path="/address" element={<AddressPage />} /> {/* 👈 new route */}
+
+     <Route path="/orders" element={<MyOrdersPage />} />
+        <Route path="/orders/:orderId" element={<OrderDetailsPage />} />
 
       {/* ADMIN LOGIN */}
       <Route path="/admin/login" element={<AdminLoginPage />} />

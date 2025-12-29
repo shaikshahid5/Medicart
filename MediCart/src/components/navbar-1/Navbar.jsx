@@ -12,16 +12,14 @@ export default function Navbar({ searchValue, onSearch }) {
   return (
     <header className="navbar">
       {/* BRAND LOGO */}
-    <div className="brand">
-  <div className="brand-text">
-    <span className="brand-main">Medi</span>
-    <span className="brand-accent">Cart</span>
-  </div>
-  <div className="brand-underline" />
-</div>
+      <div className="brand">
+        <span className="brand-main">Medi</span>
+        <span className="brand-accent">Cart</span>
+        <div className="brand-underline" />
+      </div>
 
       {/* SEARCH */}
-      <div className="navbar-search">
+      {/* <div className="navbar-search">
         <FaSearch className="search-icon" />
         <input
           type="text"
@@ -29,7 +27,7 @@ export default function Navbar({ searchValue, onSearch }) {
           value={searchValue}
           onChange={(e) => onSearch(e.target.value)}
         />
-      </div>
+      </div> */}
 
       {/* ACTIONS */}
       <div className="navbar-actions">

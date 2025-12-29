@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        mediGreen: "#2fbf5d",
+        mediGray: "#edecec",
         primary: {
           50: 'var(--color-primary-50)',
           100: 'var(--color-primary-100)',
