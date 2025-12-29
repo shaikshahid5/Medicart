@@ -108,3 +108,19 @@
   min-width: 24px;
   text-align: center;
 }
+.prescription-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.prescription-banner svg {
+  color: #b91c1c;
+}

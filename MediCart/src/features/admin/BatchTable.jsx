@@ -29,7 +29,7 @@ export default function BatchTable({
           <th>Medicine</th>
           <th>Batch No</th>
           <th>Expiry</th>
-          <th>Qty</th>
+          <th>Quantity</th>
           <th>Status</th>
           <th>Actions</th>
         </tr>
