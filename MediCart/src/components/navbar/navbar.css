@@ -32,43 +32,45 @@
   border-bottom: 1px solid var(--border-light);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
-
 /* ===============================
    BRAND LOGO (WORDMARK)
 ================================ */
 .brand {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;   /* ✅ Stack text + underline vertically */
+  align-items: flex-start;  /* ✅ Keep left aligned */
   cursor: pointer;
 }
 
-.brand-main {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -0.4px;
-  color: var(--text-dark);
-  line-height: 1;
+.brand-text {
+  display: flex;            /* ✅ Medi + Cart side by side */
+  gap: 4px;                 /* ✅ Small spacing */
 }
 
+.brand-main,
 .brand-accent {
   font-size: 22px;
   font-weight: 800;
   letter-spacing: -0.4px;
-  color: var(--green-primary);
   line-height: 1;
 }
 
+.brand-main {
+  color: var(--text-dark);
+}
+
+.brand-accent {
+  color: var(--green-primary);
+}
+
 .brand-underline {
-  width: 38px;
+  width: 53%;              /* ✅ Stretch under both words */
   height: 3px;
   margin-top: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--green-primary),
-    var(--green-dark)
-  );
+  background: linear-gradient(90deg, var(--green-primary), var(--green-dark));
   border-radius: 999px;
 }
+
 
 /* ===============================
    SEARCH BAR (ENTERPRISE STYLE)
