@@ -2,8 +2,8 @@
    GLOBAL BRAND VARIABLES
 ================================ */
 :root {
-  --green-primary: #2fbf5d;
-  --green-dark: #1f8a46;
+  --green-primary: #198754;
+  --green-dark: #157347;
   --green-soft: #e9f7ef;
 
   --text-dark: #111827;
@@ -11,16 +11,33 @@
 
   --border-light: #e5e7eb;
   --bg-white: #ffffff;
+
+  /* Brand color for auth buttons */
+  --brand-green: var(--green-primary);
 }
+
+/* ===============================
+   BASELINE RESET
+================================ */
+* {
+  box-sizing: border-box;
+}
+
+/* If your navbar is fixed, ensure content isn’t hidden underneath.
+   Uncomment if needed:
+   body { padding-top: 72px; }
+*/
 
 /* ===============================
    NAVBAR CONTAINER
 ================================ */
 .navbar {
-  position: sticky;
+  position: fixed;
+  /* fixed to top */
   top: 0;
-  z-index: 1000;
-  border-radius: 10px;
+  left: 0;
+  right: 0;
+  z-index: 1100;
   height: 72px;
   padding: 0 40px;
 
@@ -32,19 +49,18 @@
   border-bottom: 1px solid var(--border-light);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
+
 /* ===============================
    BRAND LOGO (WORDMARK)
 ================================ */
 .brand {
   display: flex;
-  flex-direction: column;   /* ✅ Stack text + underline vertically */
-  align-items: flex-start;  /* ✅ Keep left aligned */
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
   cursor: pointer;
-}
-
-.brand-text {
-  display: flex;            /* ✅ Medi + Cart side by side */
-  gap: 4px;                 /* ✅ Small spacing */
+  text-decoration: none;
+  /* remove link underline */
 }
 
 .brand-main,
@@ -64,16 +80,11 @@
 }
 
 .brand-underline {
-  width: 53%;              /* ✅ Stretch under both words */
-  height: 3px;
-  margin-top: 4px;
-  background: linear-gradient(90deg, var(--green-primary), var(--green-dark));
-  border-radius: 999px;
+  display: none;
 }
 
-
 /* ===============================
-   SEARCH BAR (ENTERPRISE STYLE)
+   SEARCH BAR
 ================================ */
 .navbar-search {
   flex: 1;
@@ -99,7 +110,10 @@
 
 .search-icon {
   color: var(--green-dark);
-  font-size: 14px;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-search input {
@@ -118,12 +132,14 @@
 }
 
 /* ===============================
-   RIGHT ACTIONS
+   RIGHT ACTIONS ROW
+   (Cart, Profile, Auth group)
 ================================ */
 .navbar-actions {
   display: flex;
   align-items: center;
   gap: 26px;
+  /* spacing between cart, profile, and auth group */
 }
 
 /* CART */
@@ -132,10 +148,16 @@
   cursor: pointer;
   color: var(--text-dark);
   transition: color 0.2s ease;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  /* matches button height for vertical alignment */
 }
 
 .cart-wrapper:hover {
-  color: var(--green-primary);
+  color: var(--bs-btn-active-bg);
 }
 
 .cart-count {
@@ -150,51 +172,102 @@
   place-items: center;
 
   background: var(--green-primary);
-  color: white;
+  color: #fff;
 
   font-size: 11px;
   font-weight: 700;
 
   border-radius: 999px;
+  padding: 0 4px;
 }
 
 /* PROFILE */
+.profile-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  /* matches button height */
+}
+
 .profile-icon {
   cursor: pointer;
   color: var(--text-dark);
   transition: color 0.2s ease;
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-icon:hover {
   color: var(--green-primary);
 }
-.profile-wrapper {
-  position: relative;
-  display: inline-block;
-}
 
+/* Optional dropdown menu (hidden by default) */
 .profile-menu {
   position: absolute;
-  top: 35px; /* below the icon */
+  top: 42px;
+  /* below the icon */
   right: 0;
-  background: white;
+  background: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   z-index: 100;
+  min-width: 180px;
+  display: none;
+  overflow: hidden;
 }
 
 .profile-menu ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 8px 0;
 }
 
 .profile-menu li {
-  padding: 10px 15px;
+  padding: 10px 14px;
   cursor: pointer;
+  font-size: 14px;
+  color: var(--text-dark);
 }
 
 .profile-menu li:hover {
   background-color: #f5f5f5;
+}
+
+/* ===============================
+   RESPONSIVE TWEAKS
+================================ */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0 24px;
+  }
+
+  .navbar-search {
+    margin: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar-actions {
+    gap: 16px;
+  }
+
+  /* Hide search on small screens to save space (optional) */
+  .navbar-search {
+    display: none;
+  }
+
+  /* Slightly tighten spacing on small screens */
+  .auth-group {
+    margin-left: 14px;
+    gap: 10px;
+  }
 }

@@ -6,9 +6,9 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
-
+import "./components/style/custom.css";
 import { store } from "/src/store/store.js";
+
 
 const queryClient = new QueryClient();
 

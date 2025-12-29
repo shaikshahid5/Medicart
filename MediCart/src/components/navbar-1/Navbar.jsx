@@ -1,5 +1,6 @@
 import { FaShoppingCart, FaUserCircle, FaSearch } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
 export default function Navbar({ searchValue, onSearch }) {
@@ -12,14 +13,14 @@ export default function Navbar({ searchValue, onSearch }) {
   return (
     <header className="navbar">
       {/* BRAND LOGO */}
-      <div className="brand">
+      <Link to="/" className="brand" aria-label="MediCart home">
         <span className="brand-main">Medi</span>
         <span className="brand-accent">Cart</span>
         <div className="brand-underline" />
-      </div>
+      </Link>
 
       {/* SEARCH */}
-      {/* <div className="navbar-search">
+      <div className="navbar-search">
         <FaSearch className="search-icon" />
         <input
           type="text"
@@ -27,7 +28,7 @@ export default function Navbar({ searchValue, onSearch }) {
           value={searchValue}
           onChange={(e) => onSearch(e.target.value)}
         />
-      </div> */}
+      </div>
 
       {/* ACTIONS */}
       <div className="navbar-actions">
@@ -39,8 +40,8 @@ export default function Navbar({ searchValue, onSearch }) {
             <span className="cart-count">{totalQty}</span>
           )}
         </div>
-
         <FaUserCircle size={26} className="profile-icon" />
+        {/* Auth buttons (visible) */}
       </div>
     </header>
   );

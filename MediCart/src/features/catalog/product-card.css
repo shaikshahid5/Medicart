@@ -1,3 +1,8 @@
+:root {
+  --green-primary: #198754;
+  --green-dark: #157347;
+}
+
 .card {
   background: #fff;
   border: 1px solid #eee;
@@ -72,13 +77,13 @@
   transition: all 0.2s ease;
 }
 .btn-cart {
-  background: #2fbf5d;
+  background: var(--green-primary);
   border: none;
   color: #fff;
   font-weight: 600;
 }
 .btn-cart:hover {
-  background: #26a654;
+  background: var(--green-dark);
 }
 .btn-outline {
   background: transparent;
@@ -86,8 +91,8 @@
   color: #374151;
 }
 .btn-outline:hover {
-  border-color: #2fbf5d;
-  color: #2fbf5d;
+  border-color: var(--green-dark);
+  color: var(--green-primary);
   background: #f0fdf4;
 }
 

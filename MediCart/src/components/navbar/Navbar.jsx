@@ -1,39 +1,21 @@
 import { FaShoppingCart, FaUserCircle, FaSearch } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { useState, useEffect, useRef } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 
 export default function Navbar({ searchValue, onSearch }) {
-  // ✅ Get cart items from Redux
-  const items = useSelector((state) => state.cart.items);
-
-  // ✅ Calculate total quantity
-  const totalQty = items.reduce((sum, item) => sum + item.qty, 0);
-
-  // ✅ State for profile menu
-  const [showMenu, setShowMenu] = useState(false);
-  const menuRef = useRef(null);
-
-  // ✅ Close menu when clicking outside
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setShowMenu(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  const items = useSelector((state) => (state?.cart?.items ?? []));
+  const totalQty = items.reduce((sum, item) => sum + (item?.qty || 0), 0);
 
   return (
     <header className="navbar">
       {/* BRAND LOGO */}
       <div className="brand">
         <div className="brand-text">
-          <span className="brand-main">Medi</span>
+          <span className="brand-main">Medi</span>{" "}
           <span className="brand-accent">Cart</span>
+          <div className="brand-underline" />
         </div>
         <div className="brand-underline" />
       </div>
@@ -44,8 +26,8 @@ export default function Navbar({ searchValue, onSearch }) {
         <input
           type="text"
           placeholder="Search medicines, tablets, syrups, injections"
-          value={searchValue}
-          onChange={(e) => onSearch(e.target.value)}
+          value={searchValue || ""}
+          onChange={(e) => onSearch && onSearch(e.target.value)}
         />
       </div>
 
@@ -57,22 +39,19 @@ export default function Navbar({ searchValue, onSearch }) {
         </div>
 
         {/* USER PROFILE */}
-        <div className="profile-wrapper" ref={menuRef}>
-          <FaUserCircle
-            size={26}
-            className="profile-icon"
-            onClick={() => setShowMenu(!showMenu)}
-          />
+        <div className="profile-wrapper">
+          <Link to={"/dashboard/client"}>
+            <FaUserCircle
+              size={26}
+              className="profile-icon"
+            />
+          </Link>
+        </div>
 
-          {/* Dropdown Menu */}
-          {showMenu && (
-            <div className="profile-menu">
-              <ul>
-                <li>Orders</li>
-                <li>Account</li>
-              </ul>
-            </div>
-          )}
+        {/* Auth buttons inserted after profile-icon */}
+        <div className="d-flex gap-3">
+          <NavLink to="login" className={`btn btn-outline-success`}> Login </NavLink>
+          <NavLink to="register" className={`btn btn-outline-success`}> Register </NavLink>
         </div>
       </div>
     </header>

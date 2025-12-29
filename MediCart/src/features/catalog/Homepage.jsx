@@ -38,13 +38,7 @@ export default function HomePage() {
   });
 
   return (
-    <div className="page">
-      {/* NAVBAR */}
-      <Navbar
-        searchValue={q}
-        onSearch={(val) => dispatch(setSearchQuery(val))}
-      />
-
+    <div className="container">
       {/* CATEGORY FILTER */}
       <div className="categories">
         {["ALL", "Tablet", "Capsule", "Syrup", "Injection", "Powder"].map(
@@ -91,9 +85,7 @@ export default function HomePage() {
         onClose={() => setSelectedProduct(null)}
       />
 
-      <CartSummary/>
-
-      
+      <CartSummary />
     </div>
   );
 }
