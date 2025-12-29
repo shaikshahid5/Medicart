@@ -5,6 +5,7 @@ import AdminLayout from "./features/admin/AdminLayout";
 import AdminProductsPage from "./features/admin/AdminProductsPage";
 import AdminBatchPage from "./features/admin/AdminBatchPage";
 import AdminLoginPage from "./features/admin/AdminLoginPage";
+import MediCartModule4 from "./features/payment/MediCartModule4";
 
 export default function App() {
   return (
@@ -14,12 +15,15 @@ export default function App() {
 
       {/* ADMIN LOGIN */}
       <Route path="/admin/login" element={<AdminLoginPage />} />
+      <Route path="/payment" element={<MediCartModule4 />} />
+
 
       {/* ADMIN PROTECTED ROUTES */}
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<Navigate to="products" />} />
         <Route path="products" element={<AdminProductsPage />} />
         <Route path="batches" element={<AdminBatchPage />} />
+        
       </Route>
 
       {/* FALLBACK */}
